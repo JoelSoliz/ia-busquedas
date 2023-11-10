@@ -110,7 +110,7 @@ public class BusquedaHijos {
                     int tmp1 = estadoBase.getAlmJ1();
                     int tmp2 = estadoBase.getAlmJ2();
                     vaciarAjarra(jarra1, estadoBase.getAlmJ1() , jarra2, estadoBase.getAlmJ2());
-                    almacenarEstado(jarra1.getAlmacenado(),jarra2.getAlmacenado(), estadoBase.getAlmJ3(), "vaciamos la jarra 2 en la jarra 1", lista);
+                    almacenarEstado(jarra1.getAlmacenado(),jarra2.getAlmacenado(), estadoBase.getAlmJ3(), "Vaciamos la jarra 2 en la jarra 1", lista);
                     if(encontrado ==false){
                         encontrado = verificar(jarra1.getAlmacenado(), jarra2.getAlmacenado(), estadoBase.getAlmJ3());
                     }
@@ -123,7 +123,7 @@ public class BusquedaHijos {
                     int tmp1 = estadoBase.getAlmJ1();
                     int tmp2 = estadoBase.getAlmJ3();
                     vaciarAjarra(jarra1, estadoBase.getAlmJ1(), jarra3, estadoBase.getAlmJ3());
-                    almacenarEstado(jarra1.getAlmacenado(), estadoBase.getAlmJ2(), jarra3.getAlmacenado(), "vaciamos la jarra 3 en la jarra 1", lista);
+                    almacenarEstado(jarra1.getAlmacenado(), estadoBase.getAlmJ2(), jarra3.getAlmacenado(), "Vaciamos la jarra 3 en la jarra 1", lista);
                     if(encontrado ==false){
                         encontrado = verificar(jarra1.getAlmacenado(), estadoBase.getAlmJ2(), jarra3.getAlmacenado());
                     }
@@ -134,7 +134,7 @@ public class BusquedaHijos {
                     int tmp1 = estadoBase.getAlmJ2();
                     int tmp2 = estadoBase.getAlmJ1();
                     vaciarAjarra(jarra2, estadoBase.getAlmJ2(), jarra1, estadoBase.getAlmJ1());
-                    almacenarEstado(jarra1.getAlmacenado(),jarra2.getAlmacenado(), estadoBase.getAlmJ3(), "vaciamos la jarra 1 en la jarra 2", lista);
+                    almacenarEstado(jarra1.getAlmacenado(),jarra2.getAlmacenado(), estadoBase.getAlmJ3(), "Vaciamos la jarra 1 en la jarra 2", lista);
                     estadoBase.setAlmJ2(tmp1);
                     estadoBase.setAlmJ1(tmp2);
                 }
@@ -142,7 +142,7 @@ public class BusquedaHijos {
                     int tmp1 = estadoBase.getAlmJ2();
                     int tmp2 = estadoBase.getAlmJ3();
                     vaciarAjarra(jarra2, estadoBase.getAlmJ2(),jarra3, estadoBase.getAlmJ3());
-                    almacenarEstado(estadoBase.getAlmJ1(),jarra2.getAlmacenado(), jarra3.getAlmacenado(), "vaciamos la jarra 3 en la jarra 2", lista);
+                    almacenarEstado(estadoBase.getAlmJ1(),jarra2.getAlmacenado(), jarra3.getAlmacenado(), "Vaciamos la jarra 3 en la jarra 2", lista);
                     estadoBase.setAlmJ2(tmp1);
                     estadoBase.setAlmJ3(tmp2);
                 }
@@ -150,7 +150,7 @@ public class BusquedaHijos {
                     int tmp1 = estadoBase.getAlmJ3();
                     int tmp2 = estadoBase.getAlmJ1();
                     vaciarAjarra(jarra3, estadoBase.getAlmJ3(),jarra1, estadoBase.getAlmJ1());
-                    almacenarEstado(jarra1.getAlmacenado(),estadoBase.getAlmJ2(), jarra3.getAlmacenado(), "vaciamos la jarra 1 en la jarra 3", lista);
+                    almacenarEstado(jarra1.getAlmacenado(),estadoBase.getAlmJ2(), jarra3.getAlmacenado(), "Vaciamos la jarra 1 en la jarra 3", lista);
                     estadoBase.setAlmJ3(tmp1);
                     estadoBase.setAlmJ1(tmp2);
                 }
@@ -158,7 +158,7 @@ public class BusquedaHijos {
                     int tmp1 = estadoBase.getAlmJ3();
                     int tmp2 = estadoBase.getAlmJ2();
                     vaciarAjarra(jarra3, estadoBase.getAlmJ3(),jarra2, estadoBase.getAlmJ2());
-                    almacenarEstado(estadoBase.getAlmJ1(),jarra2.getAlmacenado(), jarra3.getAlmacenado(), "vaciamos la jarra 2 en la jarra 3", lista);
+                    almacenarEstado(estadoBase.getAlmJ1(),jarra2.getAlmacenado(), jarra3.getAlmacenado(), "Vaciamos la jarra 2 en la jarra 3", lista);
                     estadoBase.setAlmJ3(tmp1);
                     estadoBase.setAlmJ2(tmp2);
                 }
@@ -166,7 +166,7 @@ public class BusquedaHijos {
                     boolean sol = buscarSol(lista.getMiLista().get(i), iteracion+1);
                     if(sol){
                         Estado camino = lista.getMiLista().get(i);
-                        System.out.println(camino.getAlmJ1()+" "+camino.getAlmJ2()+" "+camino.getAlmJ3()+" "+ camino.getPaso());
+                        System.out.println(camino.getAlmJ1()+" "+camino.getAlmJ2()+" "+camino.getAlmJ3()+" | "+ camino.getPaso());
                         break;
                     }
                 }
@@ -206,9 +206,7 @@ public class BusquedaHijos {
             lista.aniadirEstado(estado);
             estadosGlobales.aniadirEstado(estado);
         }
-        else{
-            System.out.println("estado repetido");
-        }
+
         
     }
     public void almacenarEstado(Estado estado, ListaEstados lista){
