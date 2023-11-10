@@ -10,7 +10,6 @@
 public class BusquedaDeJarrones {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
         Jarron jarra1 = new Jarron(12,0);
         Jarron jarra2 = new Jarron(8,0);
         Jarron jarra3 = new Jarron(3,0);
