@@ -19,7 +19,7 @@ public class BusquedaDeJarrones {
         /*jarra1.vaciarAjarra(jarra2);
         System.out.println("jarra 1 tiene "+jarra1.getAlmacenado());
         System.out.println("jarra 2 tiene "+jarra2.getAlmacenado());*/
-        BusquedaHijos buscar = new BusquedaHijos(jarra1,jarra2,jarra3,2);
+        BusquedaHijos buscar = new BusquedaHijos(jarra1,jarra2,jarra3,1);
         
     }
 }
