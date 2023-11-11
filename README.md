@@ -18,12 +18,13 @@ que obtener exactamente un galón.
 #### **Búsqueda no informada - Límite iterativo**
 
 Pasos para hacer correr el programa:
-1. Abrir la carpeta `busqueda_no_informada - profundidad iterativa` con su IDE de preferencia.
+1. Abrir la carpeta `/problema jarron/busqueda_no_informada - profundidad iterativa` con su IDE de preferencia.
 2. Compilar el proyecto.
 3. Ejecutar el archivo Main llamado `BusquedaDeJarrones.java`
    1.En caso de que quiera cambiar los valores de las jarras puede hacerlo cambiando los valores de su creacion en la clase Main. Ej: Jarron jarra1 = new Jarron(capacidadMaximaDelJarron,aguaAlmacenada);
    2. En caso de que quiera cambiar el valor del objetivo final puede cambiar la siguiente linea de codigo en la clase Main: BusquedaHijos buscar = new BusquedaHijos(jarra1,jarra2,jarra3,ObjetivoFinal);
 4. El resultado de la busqueda se podra observar en la terminal.
+
 **Observaciones**
 -El resultado se imprimira desde el resultado final hasta el inicio.
 
