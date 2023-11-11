@@ -53,6 +53,16 @@ Coloree un mapa plano utilizando sólo cuatro colores, de tal modo que dos regio
 #### **Búsqueda no informada - Profundidad limitada**
 
 Pasos para hacer correr el programa:
+1. Abrir la carpeta `/problema mapa/busqueda no  informada - profundidad limitada` con su IDE de preferencia.
+2. Compilar el proyecto.
+3. Ejecutar el archivo `Main`.
+   1. Opcionalmente previo a ejecutar el archivo `Main` puede modificar el caso de prueba, para ello necesitará modificar el siguiente código:
+      - Usar la clase `Grafo` para indicar la cantidad de espacios a colorear. Por ejemplo: `addNodo(6)` creará 6 espacios para colorear.
+4. Observar los resultados impresos en la terminal.
+
+**Observaciones**
+
+- En caso de haber recorrido todos los estados posibles el programa le mostrará el mensaje de `NO es un grafo planar!`.
 
 #### **Búsqueda informada - Avara**
 
