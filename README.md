@@ -1,10 +1,10 @@
 # **Metodologías de Búsqueda**
 ## **_Integrantes_**
--Kevin Alberto Rioja
--Adrian Perez Tapia
--Andres Joel Soliz Choque
--Jose Jeremias Vizcarra Apaza
--Juan Daniel Caberos Carbajal
+- Kevin Alberto Rioja
+- Adrian Perez Tapia
+- Andres Joel Soliz Choque
+- Jose Jeremias Vizcarra Apaza
+- Juan Daniel Caberos Carbajal
 
 Para la aplicación de las metodologías se tomo en cuenta los siguientes problemas:
 
