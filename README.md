@@ -67,7 +67,7 @@ Pasos para hacer correr el programa:
 #### **Búsqueda informada - Avara**
 
 Pasos para hacer correr el programa:
-1. Abrir la carpeta `...`
+1. Abrir la carpeta `/problema mapa/Busqueda informada - Avara`
 2. Compilar el proyecto
 3. Ejecutar el archivo `PruebaMapa`
    - Se manda una lista de colores a la busqueda la cual determinara la cantidad de colores que se deben usar y
